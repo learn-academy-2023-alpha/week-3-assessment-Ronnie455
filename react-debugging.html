@@ -65,24 +65,33 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
-            {hand.map((card, index) => {
+            {hand.map((card, index,) => {
               return (
                 <div style={cardStyles} key={index}>
                   {card}
+                  
                 </div>
+                
               )
             })}
           </div>
-        )
+          </>
+          )
+      
       }
+            // Pseudocode: input - draw a randomized card by calling on functions
+            // Output: Be able to return cards and Shuffle Deck.
+            // First  I'll add  fragment tags in the editable codeblock to be able to log javascript in html file. After adding them the code will all run, but it'll still be broken code. Next the onClick button that will allow us to return the cards and shuffle the deck isn't calling upon a function. call within the curleys shuffle. {shuffle}. The variable onClick for shuffle isn't in camelCase. Change onclick to onClick. 
+            // react-debugging.html browser will now run all required function, as well as display required text.
 
       // No need to change anything below this line
 
